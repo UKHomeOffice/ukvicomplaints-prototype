@@ -60,7 +60,12 @@
 	       </label>
 
 				 <label class="block-label" for="radio-3">
-	         <input id="radio-3" type="radio" name="radio-group" value="sb-letter-email">
+	         <input id="radio-3" type="radio" name="radio-group" data-target="sc-yes" value="sb-sc">
+	         At the premium service centre
+	       </label>
+
+				 <label class="block-label" for="radio-4">
+	         <input id="radio-4" type="radio" name="radio-group" value="sb-letter-email">
 	         In a letter/email
 	       </label>
 
@@ -96,6 +101,9 @@
 						case 'sb-vac':
 							this.href = 'q3-2.html';
 							break;
+							case 'sb-sc':
+								this.href = 'q3-4.html';
+								break;
 					default:
 						this.href = 'q3-3.html';
 						break;
