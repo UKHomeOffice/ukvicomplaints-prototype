@@ -68,6 +68,36 @@
 
 	</fieldset>
 </form>
+<!--  -->
+<form>
+    <div class="form-group error">
+      <fieldset>
+
+        <legend id="example-personal-details">
+
+          <span class="form-label-bold">
+            Do you have permission?
+          </span>
+          <span class="error-message">
+            You can’t make a complaint on behalf of someone else without consent. If you don’t have consent, don’t use this service.
+          </span>
+
+        </legend>
+
+        <label class="block-label" for="personal_details_yes">
+          <input id="personal_details_yes" type="radio" name="personal_details" value="yes-permission">
+          <span></span> Yes
+        </label>
+
+        <label class="block-label" for="personal_details_no">
+          <input id="personal_details_no" type="radio" name="personal_details" value="no-permission">
+          <span></span> No
+        </label>
+
+      </fieldset>
+    </div>
+
+  </form>
 
 <br>
 <a href="#"><input class="button" type="submit" value="Continue"></a>
