@@ -101,11 +101,11 @@
 				var value = $('input[name=radio-group]:checked').val();
 				// var value = $('input#input-text-id').val();
 				switch(value) {
-					case 'yes-permission':
-						this.href = 'third-party.html';
+					case 'no-permission':
+						this.href = 'deny.html';
 						break;
 					default:
-						this.href = 'deny.html';
+						this.href = 'third-party.html';
 						break;
 				}
 				return true;
