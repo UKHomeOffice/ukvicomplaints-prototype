@@ -39,25 +39,51 @@
 
 
 	 <!-- START PAGE -->
-
-<h1 class="heading-xlarge">Complain about the UK Visas and Immigration service</h1>
-
-<p>We investigate every complaint in full, which can take up to 20 working days.</p>
-
-<p>If your complaint indicates serious professional misconduct, it will be impartially investigated, which can take up to 12 weeks.</p>
-
-<p>To make a complaint on behalf of someone else, you must have their consent.</p>
-
-<p>To make a complaint,  you will need:</p>
-
-<ul>
-	<li>	•	your name, date of birth, email address and telephone number </li>
-	<li>	•	the details of your complaint</li>
-	<li>	•	the applicant’s name and date of birth, if you are making a complaint on behalf of someone else and your details</li>
-</ul>
-
 <br>
-<a class="button button-start" href="q1.html" role="button">Start now</a>
+<p><a href="q2.html" class="link-back">< Back</a> Section 2: Complaint details</p>
+
+	 <h1 class="heading-medium">What is the complaint about?</h1>
+
+	 <form>
+<fieldset>
+
+	<legend class="visuallyhidden">How do you want to be contacted?</legend>
+
+	<div class="form-group">
+
+		<label class="block-label" data-target="contact-by-email" for="example-contact-by-email">
+			<input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+			Email
+		</label>
+		<div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+			<label class="form-label" for="contact-email">Email address</label>
+			<input class="form-control" name="contact-email" type="text" id="contact-email">
+		</div>
+
+		<label class="block-label" data-target="contact-by-phone" for="example-contact-by-phone">
+			<input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+			Phone
+		</label>
+		<div class="panel panel-border-narrow js-hidden" id="contact-by-phone">
+			<label class="form-label" for="contact-phone">Phone number</label>
+			<input class="form-control" name="contact-phone" type="text" id="contact-phone">
+		</div>
+
+		<label class="block-label" data-target="contact-by-text" for="example-contact-by-text">
+			<input id="example-contact-by-text" type="radio" name="radio-contact-group" value="No">
+			Text message
+		</label>
+		<div class="panel panel-border-narrow js-hidden" id="contact-by-text">
+			<label class="form-label" for="contact-text-message">Mobile phone number</label>
+			<input class="form-control" name="contact-text-message" type="text" id="contact-text-message">
+		</div>
+
+	</div>
+
+</fieldset>
+</form>
+<br>
+<a href="q4.html"><input class="button" type="submit" value="Save and continue"></a>
 
 </div> <!-- column-two-thirds -->
 
@@ -73,5 +99,25 @@
 
 	</main>
 	<footer data-includefile="footer"></footer>
+	<script type="text/javascript">
+		$(function () {
+			$('a').click(function (e) {
+				var value = $('input[name=radio-group]:checked').val();
+				// var value = $('input#input-text-id').val();
+				switch(value) {
+					case 'staff-behaviour':
+						this.href = 'q3-1.html';
+						break;
+						case 'appointment':
+							this.href = 'q3-1.html';
+							break;
+					default:
+						this.href = 'q3-3.html';
+						break;
+				}
+				return true;
+			});
+		});
+	</script>
 </body>
 </html>
