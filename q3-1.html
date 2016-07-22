@@ -40,14 +40,14 @@
 
 	 <!-- START PAGE -->
 <br>
-<p><a href="q3.html" class="link-back">< Back</a> Section 2: Complaint details</p>
+<a href="q3.html" class="link-back">< Back</a>
 
-	 <h1 class="heading-medium">Where did this take place?</h1>
+	 <h1 class="heading-medium">Complaint details</h1>
 
 	   <form>
 	     <fieldset>
 
-	       <legend class="visuallyhidden">Where did this take place?</legend>
+				 <label class="form-label" for="full-name-f1">Where did the complaint take place?</label>
 
 	       <label class="block-label" for="radio-1">
 	         <input id="radio-1" type="radio" name="radio-group" value="sb-phone">
@@ -98,6 +98,9 @@
 				var value = $('input[name=radio-group]:checked').val();
 				// var value = $('input#input-text-id').val();
 				switch(value) {
+						case 'sb-phone':
+						this.href = 'q3-1phone.html';
+						break;
 						case 'sb-vac':
 							this.href = 'q3-2.html';
 							break;

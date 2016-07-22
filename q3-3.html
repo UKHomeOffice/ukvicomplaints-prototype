@@ -40,22 +40,50 @@
 
 	 <!-- START PAGE -->
 	 <br>
-	 <p><a href="q3.html" class="link-back">< Back</a> Section 2: Complaint details</p>
+	 <a href="q3.html" class="link-back">< Back</a>
 
-	 <h1 class="heading-medium">What is the reference number?</h1>
+	 <h1 class="heading-medium">Complaint details</h1>
 
-<!--GWF reference  -->
-<div>
-<label class="form-label" for="gwf-ref">
-	Enter the GWF or HO reference number
+	 <!--test  -->
+	 <p>Do you have the GWF, HO or IHS reference number?</p>
+	 <form name="test-form">
+	 	<div class="form-group">
+	      <label class="block-label selectable" for="radio-1">
+	        <input class="selectable" id="radio-1" type="radio" name="radio-order-how" value="online" data-storage="Car">
+	         Yes
+	       </label>
+	       <div class="connected optional-section optional-section-radio-order-how" data-toggle-value="online" style="display: none;">
+	         <div class="form-group">
+						 <label class="form-label" for="ni-number">
+Enter the reference number
+  <span class="form-hint">For example, GWF 123456</span>
 </label>
-  <input class="form-control" id="gwf-ref" name="gwf-ref" type="text">
-  <label class="form-checkbox" for="checkbox-gwf-ref">
-    <input id="checkbox-gwf-ref" name="gwf-ref" type="checkbox" value="true">
-    I do not know this
-	</label>
-</div>
-<br>
+<input type="text" class="form-control" id="account-number" name="account-number" data-storage="online">
+	         </div>
+
+
+	       </div>
+	       <label class="block-label selectable" for="radio-2">
+	         <input id="radio-2" type="radio" name="radio-order-how" value="unicycle" data-storage="Unicycle">
+	         No
+	       </label>
+	       <div class="connected optional-section optional-section-radio-order-how" data-toggle-value="unicycle" style="display: none;">
+	       </div>
+	     </div>
+	 	</form>
+		<br>
+		<details>
+			<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="false"><span class="summary">Help with reference numbers</span></summary>
+			<div class="panel-indent" id="details-content-0" aria-hidden="true" style="display: none;">
+				<p>
+					A GWF number is given after you apply for a visa outside the UK.
+				</p>
+
+				<p>An HO number is provided after you apply within the UK.</p>
+
+				<p>An IHS number is the Immigration Health Surcharge which is paid as part of your immigration application. </p>
+			</div>
+		</details>
 
 <br>
 <a href="q4.html"><input class="button" type="submit" value="Save and continue"></a>

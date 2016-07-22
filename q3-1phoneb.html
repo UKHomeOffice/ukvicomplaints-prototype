@@ -42,17 +42,40 @@
 	 <br>
 	 <a href="q1.html" class="link-back">< Back</a>
 
-<h1 class="heading-medium">Personal and contact details</h1>
+<h1 class="heading-medium">Complaint details</h1>
 
-<!--FULL NAME  -->
+
+<!-- DATE OF CALL -->
+
 <div class="form-group">
-	 <label class="form-label" for="full-name-f1">What is your full name?</label>
-		<input class="form-control" id="full-name-f1" type="text">
+	<fieldset>
+		<legend class="form-label">What was the date of the call?</legend>
+
+		<div class="form-date">
+			<p class="form-hint">For example, 31 3 2016</p>
+
+			<div class="form-group form-group-day">
+				<label for="dob-day">Day</label> <input class="form-control" id="dob-day"
+				type="number" pattern="[0-9]*" min="0" max="31" name="dob-day" />
+			</div>
+
+			<div class="form-group form-group-month">
+				<label for="dob-month">Month</label> <input class="form-control" id=
+				"dob-month" type="number" pattern="[0-9]*" min="0" max="12" name="dob-month" />
+			</div>
+
+			<div class="form-group form-group-year">
+				<label for="dob-year">Year</label> <input class="form-control" id="dob-year"
+				type="number" pattern="[0-9]*" min="0" max="2014" name="dob-year" />
+			</div>
+		</div>
+	</fieldset>
 </div>
 
 
+
 <br>
-<a href="q2b.html"><input class="button" type="submit" value="Save and continue"></a>
+<a href="q3-1phonec.html"><input class="button" type="submit" value="Save and continue"></a>
 
 </div> <!-- column-two-thirds -->
 
