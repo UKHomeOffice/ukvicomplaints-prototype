@@ -35,6 +35,7 @@ textarea {
   font-weight: bold;
 
 }
+
 blockquote {
   width:100%;
   font-size: 24px;
@@ -121,15 +122,17 @@ hr {
 	margin-right: 25px;
 	margin-bottom: 10px;
 }
-
+.right {
+  align: right;
+}
 
 .grey_button {
 	display:inline;
 	padding: 2px 8px;
 	color:#000;
-	background:#bfc1c3;
-	border-radius:5px;
-	border:1px solid #ccc;
+	background:#DEE0E2;
+	/*border-radius:5px;*/
+	border-bottom:3px solid #BFC1C3;
 	font-size:16px;
 	text-align:center;
 	text-decoration:none;
