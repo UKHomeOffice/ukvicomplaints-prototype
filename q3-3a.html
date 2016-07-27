@@ -40,50 +40,58 @@
 
 	 <!-- START PAGE -->
 <br>
-<a href="q2.html" class="link-back">< Back</a>
+<a href="q3.html" class="link-back">< Back</a>
 
 	 <h1 class="heading-medium">Complaint details</h1>
+	 <p>Which reference numbers do you have? Select all that apply</p>
 
-	   <form>
-	     <fieldset>
+<!--  -->
+<form name="test-form">
+	<div class="form-group">
 
-<label class="form-label" for="full-name-f1">What is the primary complaint about?</label>
-	       <label class="block-label" for="radio-1">
-	         <input id="radio-1" type="radio" name="radio-group" value="staff-behaviour">
-	         Staff behaviour
-	       </label>
+     <label class="block-label selectable" for="radio-1">
+       <input class="selectable" id="radio-1" type="checkbox" name="travel-how" value="gwf" data-storage="Car">
+        GWF reference number
+      </label>
+      <div class="optional-section-travel-how form-group" data-toggle-value="gwf">
+					 <label class="form-label" for="vac-city">
+						 Enter reference number
+					 </label>
+						<input class="form-control" id="vac-city" type="text">
+			</div>
 
-	       <label class="block-label" for="radio-2">
-	         <input id="radio-2" type="radio" name="radio-group" value="appointment">
-	         An appointment
-	       </label>
+      <label class="block-label selectable" for="radio-2">
+        <input id="radio-2" type="checkbox" name="travel-how" value="ho" data-storage="Unicycle">
+        HO reference number
+      </label>
+      <div class="optional-section-travel-how form-group" data-toggle-value="ho">
 
-				 <label class="block-label" for="radio-3">
-	         <input id="radio-3" type="radio" name="radio-group" value="refund">
-	         Refund
-	       </label>
+						 <label class="form-label" for="vac-city2">
+							 Enter reference number
+						 </label>
+							<input class="form-control" id="vac-city2" type="text">
+      </div>
 
-				 <label class="block-label" for="radio-4">
-	         <input id="radio-4" type="radio" name="radio-group" value="quality-of-service">
-	         Quality of service
-	       </label>
+			<label class="block-label selectable" for="radio-3">
+        <input id="radio-3" type="checkbox" name="travel-how" value="ihs" data-storage="Something">
+        IHS reference number
+      </label>
+      <div class="optional-section-travel-how form-group" data-toggle-value="ihs">
 
-				 <label class="block-label" for="radio-5">
-	         <input id="radio-5" type="radio" name="radio-group" value="previous-complaint">
-	         This is a previous complaint
-	       </label>
 
-				 <label class="block-label" for="radio-6">
-	         <input id="radio-6" type="radio" name="radio-group" value="something-else">
-	         Something else
-	       </label>
+						 <label class="form-label" for="vac-city3">
+							 Enter reference number
+						 </label>
+							<input class="form-control" id="vac-city3" type="text">
 
-	     </fieldset>
-	   </form>
+      </div>
 
+    </div>
+	</form>
+<!--  -->
 <br>
-<a href="q4.html"><input class="button" type="submit" value="Save and continue"></a>
 
+<a href="q4.html"><input class="button" type="submit" value="Save and continue"></a>
 </div> <!-- column-two-thirds -->
 
 
@@ -104,15 +112,15 @@
 				var value = $('input[name=radio-group]:checked').val();
 				// var value = $('input#input-text-id').val();
 				switch(value) {
-					case 'staff-behaviour':
-						this.href = 'q3-1.html';
+						case 'sb-phone':
+						this.href = 'q3-1phone.html';
 						break;
-						case 'appointment':
-							this.href = 'q3-1.html';
+						case 'sb-vac':
+							this.href = 'q3-2.html';
 							break;
-						case 'previous-complaint':
-							this.href = 'q3-5.html';
-							break;
+							case 'sb-sc':
+								this.href = 'q3-4.html';
+								break;
 					default:
 						this.href = 'q3-3.html';
 						break;

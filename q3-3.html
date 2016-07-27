@@ -45,32 +45,22 @@
 	 <h1 class="heading-medium">Complaint details</h1>
 
 	 <!--test  -->
-	 <p>Do you have the GWF, HO or IHS reference number?</p>
-	 <form name="test-form">
-	 	<div class="form-group">
-	      <label class="block-label selectable" for="radio-1">
-	        <input class="selectable" id="radio-1" type="radio" name="radio-order-how" value="online" data-storage="Car">
-	         Yes
-	       </label>
-	       <div class="connected optional-section optional-section-radio-order-how" data-toggle-value="online" style="display: none;">
-	         <div class="form-group">
-						 <label class="form-label" for="ni-number">
-Enter the reference number
-  <span class="form-hint">For example, GWF 123456</span>
-</label>
-<input type="text" class="form-control" id="account-number" name="account-number" data-storage="online">
-	         </div>
+	 <form>
+	 	<fieldset>
 
+	 <label class="form-label" for="full-name-f1">Do you have the GWF, HO or IHS reference number(s)?</label>
+	 		<label class="block-label" for="radio-1">
+	 			<input id="radio-1" type="radio" name="radio-group" value="yes-permission">
+	 			Yes
+	 		</label>
+	 		<label class="block-label" for="radio-2">
+	 			<input id="radio-2" type="radio" name="radio-group" value="no-permission">
+	 			No
+	 		</label>
 
-	       </div>
-	       <label class="block-label selectable" for="radio-2">
-	         <input id="radio-2" type="radio" name="radio-order-how" value="unicycle" data-storage="Unicycle">
-	         No
-	       </label>
-	       <div class="connected optional-section optional-section-radio-order-how" data-toggle-value="unicycle" style="display: none;">
-	       </div>
-	     </div>
-	 	</form>
+	 	</fieldset>
+	 </form>
+
 		<br>
 		<details>
 			<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="false"><span class="summary">Help with reference numbers</span></summary>
@@ -86,7 +76,7 @@ Enter the reference number
 		</details>
 
 <br>
-<a href="q4.html"><input class="button" type="submit" value="Save and continue"></a>
+<a href="#"><input class="button" type="submit" value="Save and continue"></a>
 
 </div> <!-- column-two-thirds -->
 
@@ -102,5 +92,22 @@ Enter the reference number
 
 	</main>
 	<footer data-includefile="footer"></footer>
+	<script type="text/javascript">
+		$(function () {
+			$('a').click(function (e) {
+				var value = $('input[name=radio-group]:checked').val();
+				// var value = $('input#input-text-id').val();
+				switch(value) {
+					case 'yes-permission':
+						this.href = 'q3-3a.html';
+						break;
+					default:
+						this.href = 'q4.html';
+						break;
+				}
+				return true;
+			});
+		});
+	</script>
 </body>
 </html>
