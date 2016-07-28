@@ -10,10 +10,10 @@ $( document ).ready(function() {
   });
 
   //write to local storage
-  $('form').storeForm();
+  // $('form').storeForm();
   //play back from local storage
-  $('.playback-container').getForm();
-  
+  // $('.playback-container').getForm();
+
   //toggle stuff by Ed Horsford @ GDS
   $('body').on('change', 'input', function(){
     var $this = $(this);
