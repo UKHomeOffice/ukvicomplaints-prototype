@@ -1,0 +1,152 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="author" content="Tom Harrop" />
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<!-- <link href="stylesheets/bootstrap.css" media="all" rel="stylesheet" type="text/css" /> -->
+
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/form.storage.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
+	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+
+ <div class="column-two-thirds">
+
+
+
+	 <!-- START PAGE -->
+<br>
+
+
+	 <h1 class="heading-medium">Personal and contact details</h1>
+
+	   <!-- <form>
+	     <fieldset>
+
+<label class="form-label" for="full-name-f1">Who are you?</label>
+	       <label class="block-label" for="radio-1">
+	         <input id="radio-1" type="radio" name="radio-group" value="applicant">
+	         I'm the applicant
+	       </label> -->
+				 <!--  -->
+				 <label class="block-label selectable" for="radio-1">
+	 							<input class="selectable" id="radio-1" type="checkbox" name="travel-how" value="one">
+	 							I represent the applicant
+	 						</label>
+	 						<div class="optional-section-travel-how form-group" data-toggle-value="one">
+	 							<label class="form-label" for="vac-city">
+	 								To make a complaint on behalf of someone else you must have their explicit consent, or have agreed consent from the Home Office, to handle this information.
+									<p>If you make a complaint on behalf of someone else without their prior consent, or without approval from the Home Office, you will be committing an unlawful act, as described in section 55 of the Data Protection Act 1998.</p>
+	 							</label>
+								<p>(box)I have permission from the complainant or the Home Office to make this complaint</p>
+	 							<br><br>
+
+	 						</div>
+				 <!--  -->
+	       <!-- <label class="block-label" for="radio-2">
+	         <input id="radio-2" type="radio" name="radio-group" value="represent">
+	         I represent the applicant
+	       </label> -->
+				 <form name="test-form">
+				 	<div class="form-group">
+				      <label class="block-label selectable" for="radio-1">
+				        <input class="selectable" id="radio-1" type="radio" name="radio-order-how" value="online" data-storage="Car">
+				         I'm the applicant
+				       </label>
+				       <div class="connected optional-section optional-section-radio-order-how" data-toggle-value="online" style="display: none;">
+				         <div class="form-group">
+				           <label class="form-label-bold" for="col-number">Tell us the car's registration number
+				           </label>
+				         </div>
+				         <div class="form-group">
+				           <input type="text" class="form-control" id="account-number" name="account-number" data-storage="online">
+				         </div>
+				         <div class="form-group">
+				           <details>
+				             <summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="false"><span class="summary">Where can I find the registration number?</span></summary>
+				             <div class="panel-indent" id="details-content-0" aria-hidden="true" style="display: none;">
+				               <p>
+				                 Registration numbers are written on large yellow (rear) or white (front) plastic plates on the car and are generally hard to miss.
+				               </p>
+				             </div>
+				           </details>
+				         </div>
+				       </div>
+				       <label class="block-label selectable" for="radio-2">
+				         <input id="radio-2" type="radio" name="radio-order-how" value="unicycle" data-storage="Unicycle">
+				         I represent the applicant
+				       </label>
+				       <div class="connected optional-section optional-section-radio-order-how" data-toggle-value="unicycle" style="display: none;">
+				         <div class="form-group">
+				           <label class="form-label-bold" for="account-number">How did you learn to unicycle?</label>
+				         </div>
+				         <div class="form-group">
+				           <input type="text" class="form-control" id="account-number" name="account-number">
+				         </div>
+
+				       </div>
+				     </div>
+				 	</form>
+	     </fieldset>
+	   </form>
+
+<br>
+<a href="#"><input class="button" type="submit" value="Save and continue"></a>
+
+</div> <!-- column-two-thirds -->
+
+
+
+
+
+
+
+
+		 <!-- STOP DELETING! -->
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+	<script type="text/javascript">
+		$(function () {
+			$('a').click(function (e) {
+				var value = $('input[name=radio-group]:checked').val();
+				// var value = $('input#input-text-id').val();
+				switch(value) {
+					case 'represent':
+						this.href = 'declaration.html';
+						break;
+					default:
+						this.href = 'q2.html';
+						break;
+				}
+				return true;
+			});
+		});
+	</script>
+</body>
+</html>
